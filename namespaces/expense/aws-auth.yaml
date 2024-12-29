@@ -1,4 +1,4 @@
-#Mapping role to 
+#EKS cluster authenticate to AWS IAM through editing configmap
 apiVersion: v1
 data:
   mapRoles: |
