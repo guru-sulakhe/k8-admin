@@ -1,4 +1,4 @@
-#Adding role and resource access 
+#Creating role and resource access 
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
