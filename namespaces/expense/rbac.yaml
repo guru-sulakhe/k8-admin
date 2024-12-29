@@ -5,7 +5,7 @@ metadata:
   namespace: expense
   name: expense-pod-reader
 rules:
-- apiGroups: [""] # "" indicates the core API group
+- apiGroups: [""] # "" indicates the core API group, it refers a group of resources
   resources: ["pods"] #resource access
   verbs: ["get", "watch", "list"]
 ------
