@@ -1,4 +1,4 @@
-#Adding role and permissions 
+#Adding role and resource access 
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
@@ -6,7 +6,7 @@ metadata:
   name: expense-pod-reader
 rules:
 - apiGroups: [""] # "" indicates the core API group
-  resources: ["pods"]
+  resources: ["pods"] #resource access
   verbs: ["get", "watch", "list"]
 ------
 #Binding role to harish user

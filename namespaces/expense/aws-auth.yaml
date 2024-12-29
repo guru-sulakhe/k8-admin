@@ -1,3 +1,4 @@
+#Mapping role to 
 apiVersion: v1
 data:
   mapRoles: |
@@ -10,7 +11,7 @@ data:
     - groups:
       - expense-pod-reader
       userarn: arn:aws:iam::315069654700:user/harish
-      username: harish
+      username: harish 
 kind: ConfigMap
 metadata:
   creationTimestamp: "2024-07-05T01:35:42Z"
