@@ -10,7 +10,7 @@ data:
       - system:nodes
       rolearn: arn:aws:iam::315069654700:role/eksctl-expense-1-nodegroup-expense-NodeInstanceRole-QpZ8MlrLGAdG
       username: system:node:{{EC2PrivateDNSName}}
-  mapUsers: | #your user name with ARN and your role which you created in expense.yaml
+  mapUsers: | #your user name with ARN and your role which you created in rbac.yaml
     - groups: 
       - expense-pod-reader
       userarn: arn:aws:iam::315069654700:user/harish
