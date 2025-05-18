@@ -14,7 +14,7 @@ rules:
   resources: ["pods"] #name of the resource
   verbs: ["get", "watch", "list"] #what type of access for the resource
 ---
-#Binding role expense-pod-reader to harish user
+#Binding(Assigning) role expense-pod-reader to harish user
 apiVersion: rbac.authorization.k8s.io/v1
 # This role binding allows "harish" to read pods in the "expense" namespace.
 # You need to already have a Role named "pod-reader" in that namespace.
