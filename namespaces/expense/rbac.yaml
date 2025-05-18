@@ -54,6 +54,8 @@ rules:
   verbs: ["get", "watch", "list"] #read permission
 ---
 # clusterrole binding to user harish of AWS IAM
+#To grant permissions across a whole cluster, you can use a ClusterRoleBinding. 
+#The following ClusterRoleBinding allows any user in the group "manager" to read secrets in any namespace.
 apiVersion: rbac.authorization.k8s.io/v1
 # This cluster role binding allows anyone in the "manager" group to read secrets in any namespace.
 kind: ClusterRoleBinding
