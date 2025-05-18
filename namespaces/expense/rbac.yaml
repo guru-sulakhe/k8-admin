@@ -1,6 +1,7 @@
 #Make sure you created harish user in AWS IAM and create EKS describe policy
 #Attach the EKS describe policy to harish. so that harish can connect to EKS Cluster
 #Now we should create a role which will defines the what resources should user can access and what type of action permissions can be given 
+#Binding(Assigning) role expense-pod-reader to respective user
 
 #Creating role and resource access 
 #A Role always sets permissions within a particular namespace; when you create a Role, you have to specify the namespace it belongs in.
