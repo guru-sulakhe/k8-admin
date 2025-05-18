@@ -1,3 +1,7 @@
+#Make sure you created harish user in AWS IAM and create EKS describe policy
+#Attach the EKS describe policy to harish. so that harish can connect to EKS Cluster
+#Now we should create a role which will defines the what resources should user can access and what type of action permissions can be given 
+
 #Creating role and resource access 
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
