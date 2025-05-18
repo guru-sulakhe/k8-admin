@@ -1,4 +1,7 @@
 #EKS cluster authenticate to AWS IAM through editing configmap
+# Run the below code in your workstation(ec2)
+# $ kubectl get configmap aws-auth -n kube-system
+# you can view the below code, edit it by your requirement needs
 apiVersion: v1
 data:
   mapRoles: |
@@ -7,8 +10,8 @@ data:
       - system:nodes
       rolearn: arn:aws:iam::315069654700:role/eksctl-expense-1-nodegroup-expense-NodeInstanceRole-QpZ8MlrLGAdG
       username: system:node:{{EC2PrivateDNSName}}
-  mapUsers: |
-    - groups:
+  mapUsers: | #your user name with ARN and your role which you created in expense.yaml
+    - groups: 
       - expense-pod-reader
       userarn: arn:aws:iam::315069654700:user/harish
       username: harish 
